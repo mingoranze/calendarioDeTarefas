@@ -10,11 +10,11 @@ closeButton.addEventListener('click', (e)=>{
 });
 
 tarefaBody.addEventListener('click', (e)=>{
+    modalArea.style.display = "flex";
     let input = document.querySelector('#text').value;
     let item = e.target;
    
     console.log(item)
-    modalArea.style.display = "flex";
 });
 
 function add() {
