@@ -19,35 +19,27 @@
                 <div class="dayName">Sexta</div>
            </div>
 
-           <div class="tarefa-body">
-                
-            <div id="1" class="tarefa-item"><p class="texto"></p></div>
-            <div id="2" class="tarefa-item"><p class="texto"></p></div>
-            <div id="3" class="tarefa-item"><p class="texto"></p></div>
-            <div id="4" class="tarefa-item"><p class="texto"></p></div>
-            <div id="5" class="tarefa-item"><p class="texto"></p></div>
-               
-                
-            <div id="6" class="tarefa-item"><p class="texto"></p></div>
-            <div id="7" class="tarefa-item"><p class="texto"></p></div>
-            <div id="8" class="tarefa-item"><p class="texto"></p></div>
-            <div id="9" class="tarefa-item"><p class="texto"></p></div>
-            <div id="10" class="tarefa-item"><p class="texto"></p></div>
-              
-                
-            <div id="11" class="tarefa-item"><p class="texto"></p></div>
-            <div id="12" class="tarefa-item"><p class="texto"></p></div>
-            <div id="13" class="tarefa-item"><p class="texto"></p></div>
-            <div id="14" class="tarefa-item"><p class="texto"></p></div>
-            <div id="15" class="tarefa-item"><p class="texto"></p></div>
-           
-                
-            <div id="16" class="tarefa-item"><p class="texto"></p></div>
-            <div id="17" class="tarefa-item"><p class="texto"></p></div>
-            <div id="18" class="tarefa-item"><p class="texto"></p></div>
-            <div id="19" class="tarefa-item"><p class="texto"></p></div>
-            <div id="20" class="tarefa-item"><p class="texto"></p></div>
-                
+           <div class="tarefa-body">    
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>   
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>
+            <div class="tarefa-item"><p class="texto"></p><p class="pessoa"></p></div>       
            </div>
         </div>
     </div>
@@ -55,9 +47,25 @@
         <div class="modal-window">
             <div class="modal-conteudo">
                 <h2>Adicione uma nova tarefa</h2>
-                <input type="text" name="text" id="text" placeholder="Digite uma tarefa aqui">
-                <input type="button" value="Adicionar" id="add">
-                <button class="close">Fechar</button>
+                <form id="form">
+                    <input type="text" name="text" id="text" placeholder="Digite uma tarefa aqui">
+                    <div class="radios">
+                        <label for="Kath">
+                            Kath
+                            <input type="radio" name="pessoa" value="Kath">
+                        </label>
+                        <label for="Pedro">
+                            Pedro
+                            <input type="radio" name="pessoa" value="Pedro">
+                        </label>
+                        <label for="Bia">
+                            Bia
+                            <input type="radio" name="pessoa" value="Bia">
+                        </label>
+                    </div>
+                    <button>adicionar/fechar</button>
+
+                </form>
             </div>
         </div>
     </div>

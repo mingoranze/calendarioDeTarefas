@@ -24,20 +24,24 @@
     justify-content: space-between;
     height: 20px;
     background-color: #6b9080;
-    height: 30px;
+    width: 90%;
+
 }
 .dayName {
     width: 20%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border: .5px solid #eaf4f4;
+    font-size: 70%;
 }
 .tarefa-body {
     background-color:#f6fff8;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 .tarefa-item {
@@ -48,6 +52,15 @@
     align-items: center;
     border: .5px solid #cce3de;
     cursor: pointer;
+    flex-direction: column;
+}
+.tarefa-item .texto {
+    font-size: 18px;
+}
+.tarefa-item .pessoa {
+    margin-top: 20%;
+    font-size: 13px;
+    font-style: italic;
 }
 .tarefa-item:hover {
     background-color:#eaf4f4;
@@ -65,14 +78,49 @@
 }
 .modal-window {
     background-color: #6b9080;
-    width: 50%;
-    height: 50%;
-    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    display: flex;
 }
 .modal-conteudo {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin: auto;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+.modal-conteudo h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.modal-conteudo form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-area .radios label {
+    margin-left: 5px;
+}
+button {
+    margin-top: 10%;
+}
+#text {
+    margin-bottom: 5%;
+}
+@media (min-width:270px) and (max-width:670px) {
+    .tarefa-item .pessoa {
+        margin-top: 20%;
+        font-size: 8px;
+        font-style: italic;
+    }
+    .tarefa-item .texto {
+        font-size: 10px;
+    }
+    .tarefa-item {
+        height: 60px;
+    }
 }
