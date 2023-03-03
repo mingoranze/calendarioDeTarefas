@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'Callibre';
 }
+h1 {
+    font-size:20px;
+    margin: 10px 0px;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -14,10 +18,12 @@
 }
 .tarefa-area {
     width: 80%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
 }
 .tarefa-head {
     display: flex;
@@ -46,16 +52,18 @@
 
 .tarefa-item {
     width: 20%;
-    height: 120px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: .5px solid #cce3de;
+    border: .5px solid #b3ddd4;
     cursor: pointer;
     flex-direction: column;
+    overflow: hidden;
 }
 .tarefa-item .texto {
-    font-size: 18px;
+    font-size: 15px;
+   
 }
 .tarefa-item .pessoa {
     margin-top: 20%;
@@ -111,16 +119,28 @@ button {
 #text {
     margin-bottom: 5%;
 }
-@media (min-width:270px) and (max-width:670px) {
+@media (min-width:200px) and (max-width:670px) {
+    .tarefa-area {
+        width: 100%;
+    }
     .tarefa-item .pessoa {
         margin-top: 20%;
         font-size: 8px;
         font-style: italic;
     }
     .tarefa-item .texto {
-        font-size: 10px;
+        font-size: 6.5px;
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
     }
     .tarefa-item {
-        height: 60px;
+        overflow: hidden;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .dayName {
+        font-size: 10px;
     }
 }
